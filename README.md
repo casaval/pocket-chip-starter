@@ -3,10 +3,17 @@ A single download of configs to get a Pocket C.H.I.P. up and running
 
 Note: Commands will be listed in the readme but will (eventually) be available as separate scripts so this repo can be checked out on the PocketCHIP directly and have those available.
 
-# Update pocket chip (do before any of these game installs)
+# DO THIS FIRST
+# Update pocket chip (do before any other instructions)
 ```
 sudo apt update && sudo apt install
 sudo apt install git
+```
+
+# Pico-8
+Note: Not necessary for PocketCHIPs but regular CHIPs with an HDMI dip can also install Pico-8
+```
+sudo apt update && sudo apt install chip-pico-8
 ```
 
 # Doom
@@ -23,6 +30,7 @@ Run Singleplayer
 ```
 prboom
 ```
+More info: [http://blog.nextthing.co/heres-how-to-host-a-90s-style-doom-lan-party-using-pocketc-h-i-p/]
 
 # Quake 3 Arena (Open Arena)
 Install
@@ -35,7 +43,7 @@ Run
 ```
 openarena
 ```
-
+More Info: [http://blog.nextthing.co/multiplayer-fragfest-quake-iii-pocketc-h-i-p-lan-party/]
 
 # Minecraft Pi Edition
 Install
@@ -49,6 +57,7 @@ Run
 ```
 /home/chip/chipcraft-master/mcpi/start.sh
 ```
+More Info: [http://blog.nextthing.co/play-minecraft-on-your-c-h-i-p-pocketc-h-i-p/]
 
 ## Todo
 # Wireless Access Point
