@@ -59,6 +59,21 @@ Run
 ```
 More Info: [http://blog.nextthing.co/play-minecraft-on-your-c-h-i-p-pocketc-h-i-p/]
 
+# Configure USB Gamepad
+Add 'chip' as a member of the input group.
+```
+sudo adduser chip input
+```
+Restart your machine.
+Copy the sdl controller config file from Github.
+```
+cd /home/chip/.lexaloffle/pico-8
+wget https://raw.githubusercontent.com/gabomdq/SDL_GameControllerDB/master/gamecontrollerdb.txt
+mv gamecontrollerdb.txt /home/chip/.lexaloffle/pico-8/sdl_controllers.txt
+```
+When you first start pico-8, the controller will not work. You must first background the app (by pressing the home button) and then click the pico-8 icon again. It should now work.
+This info works for the Buffalo Classic USB Game Pad.
+
 ## Todo
 # Wireless Access Point
 # Configure USB Gamepad
